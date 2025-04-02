@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 링크 이동 태그-->
+    <!-- 
+        a 태그 target 속성 
+        _blank : 새창 
+        _self : 현재창
+
+        href 속성 : 이동 할 경로 (필수속성)
+    -->
+
+    <a href="https://www.naver.com" target="_self" title="네이버로 타이틀">네이버로 이동</a>
+    <br>
+    <a href="https://www.coupang.com" target="_blank" title="쿠팡쿠팡">쿠팡으로 쇼핑</a>
+
+    <br><br>
+
+    <!-- 현재 동일한 경로일 때  ./냄비.jpg 로 써도 인식함-->
+    <img src="냄비.jpg" alt="음식이 들어있는 냄비"> <!-- 동일한 경로 -->
+    <img src="tagimg/선풍기.jpg" alt="하얀선풍기"> <!-- 하위폴더 경로-->
+    <img src="../../images/달팽이크림.jpg" alt="달팽이크림 사진"> <!-- 상위 다른 경로 -->
+
+    <br><br><br>
+    <a href="https://www.coupang.com" target="_blank" title="쿠팡쿠팡">
+        <img src="coupang.png" alt="쿠팡로고 사진">
+    </a>
+
+    <br><br><br>
+    
+    <!-- 외부에서 링크로 가져온 사진 -->
+    <img src="https://cdn.pixabay.com/photo/2023/10/06/07/14/architecture-8297605_960_720.jpg"> 
+
+</body>
+</html>
