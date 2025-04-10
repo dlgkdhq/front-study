@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 700px;
+            height: 500px;
+            border: 1px solid black;
+            margin: 0 auto;
+            margin-top: 50px;
+            background-color: white;
+            
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .mypage {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .body { 
+            display: flex;
+        }
+
+        .content {
+            width: 490px;
+            height: 300px;
+            background-color: orange;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center ;
+            /* align-items: center; */
+            align-content: center;
+        }
+
+        .blackbox {
+            width: 100px;
+            height: 50px;
+            margin: 30px;
+            background-color: black;
+
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        .blackbox:hover {
+            transform: scale(1.5);
+            
+        }
+
+        .aside {
+            background-color: green;
+            width: 210px;
+        }
+
+        .footer {
+            background-color: blue;
+            height: 100px;
+        }
+
+        .white {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="main white">메인메뉴</div>
+            <div class="mypage white">마이페이지</div>
+        </div>
+
+        <div class="body">
+            <div class="content">
+                <div class="blackbox"></div>
+                <div class="blackbox"></div>
+                <div class="blackbox"></div>
+                <div class="blackbox"></div>
+                <div class="blackbox"></div>
+                <div class="blackbox"></div>
+            </div>
+            <div class="aside white">aside</div>
+        </div>
+
+        <div class="footer white">footer</div>
+    </div>
+</body>
+
+</html>
