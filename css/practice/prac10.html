@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border: 1px solid black;
+
+            animation-name: ani1;
+            animation-duration: 1.5s;
+            animation-delay: 1s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+            
+            /* position: relative; */
+        }
+
+        @keyframes ani1 {
+            0% {
+                /* left: 0; */
+                transform: translateX(0) rotate(0deg);
+            }
+
+            50% {
+                /* left: 150px; */
+                transform: translateX(150px) rotate(180deg);
+                background-color: orange;
+            }
+
+            100% {
+                /* left: 300px; */
+                transform: translateX(300px) rotate(360deg);
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+</body>
+</html>
